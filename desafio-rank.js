@@ -1,6 +1,6 @@
 function calcularNivel(vitorias, derrotas) {
     // Calcula o saldo de vitórias
-    let saldoVitorias = vitorias - derrotas;
+    let saldoVitorias = (vitorias - derrotas);
     let nivel;
 
     // Determina o nível com base no número de vitórias
@@ -26,14 +26,14 @@ function calcularNivel(vitorias, derrotas) {
 // Função principal para execução
 function main() {
     // Solicita ao usuário a quantidade de vitórias e derrotas
-    const vitorias = parseInt(prompt(53));
-    const derrotas = parseInt(prompt(47));
+    const vitorias = parseInt(53);
+    const derrotas = parseInt(47);
 
     // Chama a função de cálculo
     const resultado = calcularNivel(vitorias, derrotas);
 
     // Exibe o resultado
-    alert(`O Herói tem de saldo de ${resultado.saldoVitorias} está no nível de ${resultado.nivel}`);
+    console.log(`O Herói tem saldo de ${resultado.saldoVitorias} vitórias está no nível de ${resultado.nivel}`);
 }
 
 // Executa a função principal
